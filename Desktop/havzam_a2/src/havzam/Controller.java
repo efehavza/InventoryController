@@ -15,7 +15,7 @@ import javafx.scene.text.Text;
 import java.util.Optional;
 import static java.lang.Integer.parseInt;
 
-public class Assign2Controller {
+public class Controller {
     //button field variables
     @FXML private Button addButton;
     @FXML private Button saveButton;
