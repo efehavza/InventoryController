@@ -10,7 +10,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class Assign2Main extends Application { //Decleration of the main class
+public class Main extends Application { //Decleration of the main class
 
     @Override
     public void start(Stage primaryStage) throws Exception{
