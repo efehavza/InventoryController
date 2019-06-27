@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="581.0" prefWidth="362.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="havzam.Assign2Controller">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="361.0" minHeight="0.0" prefHeight="56.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="439.0" minHeight="0.0" prefHeight="47.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="425.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="440.0" minHeight="0.0" prefHeight="41.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="440.0" minHeight="0.0" prefHeight="46.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="440.0" minHeight="0.0" prefHeight="68.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="440.0" minHeight="10.0" prefHeight="212.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="440.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <children>
+      <HBox fx:id="hbox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="343.0" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="261.0" text="Inventory Tracker" textFill="LIME">
+               <font>
+                  <Font name="Courier New" size="20.0" />
+               </font>
+            </Label>
+         </children></HBox>
+      <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="37.0" prefWidth="343.0" spacing="10.0" GridPane.rowIndex="1">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <Label prefHeight="28.0" prefWidth="70.0" text="      Item ID:" textFill="#004dff" />
+            <TextField fx:id="idText" prefHeight="27.0" prefWidth="107.0" promptText="Item ID">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="53.0" prefWidth="343.0" spacing="10.0" GridPane.rowIndex="2">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <Label prefHeight="33.0" prefWidth="71.0" text="Item Name:" textAlignment="RIGHT" textFill="#004dff" />
+            <TextField fx:id="nameText" prefHeight="27.0" prefWidth="240.0" promptText="Item Name">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="343.0" spacing="10.0" GridPane.rowIndex="3">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <Label prefHeight="17.0" prefWidth="54.0" text="  Q-O-H:" textFill="#004dff" />
+            <TextField fx:id="qohText" prefHeight="27.0" prefWidth="82.0" promptText="Qnty Hand">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </TextField>
+            <Label text="R-O-P:" textFill="#004dff" />
+            <TextField fx:id="ropText" prefHeight="27.0" prefWidth="82.0" promptText="Re-Order Point">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox prefHeight="59.0" prefWidth="342.0" spacing="10.0" GridPane.rowIndex="4">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <Label prefHeight="27.0" prefWidth="71.0" text="  Sell Price:" textFill="#004dff" />
+            <TextField fx:id="priceText" prefHeight="27.0" prefWidth="81.0" promptText="Sell Price" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0" GridPane.rowIndex="5">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <Button fx:id="addButton" text="_Add" />
+            <Button fx:id="saveButton" text="_Save" />
+            <Button fx:id="ordersButton" text="_Orders" />
+            <Button fx:id="exitButton" text="E_xit" />
+         </children>
+      </HBox>
+      <TextArea fx:id="textArea" editable="false" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="6">
+         <GridPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </GridPane.margin>
+      </TextArea>
+      <Text fx:id="messageText" fill="#eb0000" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="340.2060546875" GridPane.rowIndex="7" />
+   </children>
+</GridPane>
